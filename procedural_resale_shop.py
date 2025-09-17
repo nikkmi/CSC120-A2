@@ -8,7 +8,7 @@ Description: an example of procedural code to run a small computer resale shop,
        
        Note: YOU DO NOT NEED TO MODIFY THIS FILE
 """
-# Import a few useful containers from the typing module
+'''# Import a few useful containers from the typing module
 from typing import Dict, Optional
 
 """ inventory: a list where we'll store our inventory """
@@ -77,4 +77,4 @@ def main():
     buy({"description":"2019 MacBook Pro", "processor_type":"Intel", "hard_drive_capacity":256, "memory":16, "operating_system":"High Sierra", "year_made":2019, "price":1000})
     print_inventory()
 
-main()
+main()'''

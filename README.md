@@ -27,3 +27,57 @@ This repository contains starter code for A2: Object-ification, developed for CS
  **Step 3**: Be sure to test your code! The items contained in `rubric.md` are a useful guide.
  
 **Step 4**: Fill in `rubric.md` wth your self-assessment and include your reflection on the assignment in `reflection.md`, then submit your repo to Gradescope.
+
+Notes:"""# Now, let's refurbish it
+    "new_OS = "MacOS Monterey"
+    print("Refurbishing Item ID:", computer_id, ", updating OS to", new_OS)
+    print("Updating inventory...")
+    refurbish(computer_id, new_OS)
+    print("Done.\n")
+
+    # Make sure it worked by checking inventory
+    print("Checking inventory...")
+    print_inventory()
+    print("Done.\n")
+    
+    # Now, let's sell it!
+    print("Selling Item ID:", computer_id)
+    sell(computer_id)
+    
+    # Make sure it worked by checking inventory
+    print("Checking inventory...")
+    print_inventory()
+    print("Done.\n")""""
+    """
+    # Add it to the resale store's inventory
+    print("Buying", computer["description"])
+    print("Adding to inventory...")
+    
+    print("Done.\n")
+
+    # Make sure it worked by checking inventory
+    print("Checking inventory...")
+    print_inventory()
+    print("Done.\n")
+"""
+"""computer = create_computer(
+        "Mac Pro (Late 2013)",
+        "3.5 GHc 6-Core Intel Xeon E5",
+        1024, 64,
+        "macOS Big Sur", 2013, 1500
+    )"""
+"""def create_computer(description: str,
+                    processor_type: str,
+                    hard_drive_capacity: int,
+                    memory: int,
+                    operating_system: str,
+                    year_made: int,
+                    price: int):
+    return {'description': description,
+            'processor_type': processor_type,
+            'hard_drive_capacity': hard_drive_capacity,
+            'memory': memory,
+            'operating_system': operating_system,
+            'year_made': year_made,
+            'price': price
+    }"""
