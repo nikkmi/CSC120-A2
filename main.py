@@ -2,7 +2,7 @@
 from typing import Dict, Union
 
 # Import the functions we wrote in procedural_resale_shop.py
-from procedural_resale_shop import buy, update_price, sell, print_inventory, refurbish
+#from procedural_resale_shop import buy, update_price, sell, print_inventory, refurbish
 
 """ This helper function takes in a bunch of information about a computer,
     and packages it up into a python dictionary to make it easier to store
@@ -17,7 +17,7 @@ def main():
     
     # First, let's make a computer
 
-    myShop: ResaleShop = new ResaleShop()
+    myShop: ResaleShop = ResaleShop()
     myShop.buy("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 
     1024, 64, "macOS Big Sur", 2013, 1500)
 
