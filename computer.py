@@ -44,7 +44,7 @@ class Computer:
     def actionRefurbish(self, OS: str):
         self.operating_system = OS
 
-from resaleShop import ResaleShop
+from resaleShop import resaleShop
 
 def main():
     myShop: ResaleShop = ResaleShop()
