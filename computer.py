@@ -44,6 +44,8 @@ class Computer:
     def actionRefurbish(self, OS: str):
         self.operating_system = OS
 
+from resale_shop import ResaleShop
+
 def main():
     myShop: ResaleShop = ResaleShop()
     myShop.buy("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 
