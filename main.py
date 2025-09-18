@@ -11,7 +11,7 @@ from typing import Dict, Union
     explicit data types (str, int, etc.) listed in a python function. We're 
     going to go the extra step, because when we get to Java it'll be required!
 """
-
+'''
 
 def main():
     
@@ -28,5 +28,6 @@ def main():
 
     myShop.getInventory()
 
-# Calls the main() function when this file is run
-#if __name__ == "__main__": main()
+#Calls the main() function when this file is run
+if __name__ == "__main__": main()
+'''
