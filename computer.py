@@ -1,7 +1,8 @@
+
 class Computer:
 
-    # What attributes will it need?
-    #Do I need the ID at all?
+    # creates computer class that atores the variables of every computer and operates them
+  
     description: str
     processor_type: str
     hard_drive_capacity: int
@@ -27,15 +28,8 @@ class Computer:
         self.year_made = y
         self.price = pri
         
-    # What methods will you need?
-    '''init - storing information about a specific computer
-  - storing the inventory for the store
-  newPrice- updating a computer's price
-  newOS- updating a computer's OS
-  - buying a computer (add to inventory)
-  - selling a computer (remove from inventory)
-  actionRefurbish- refurbishing a computer  new_OS
-'''
+
+#changing values
     def newPrice(self, p: int):
         self.price = p
     def newOS(self, OS: str):
@@ -52,6 +46,9 @@ class Computer:
         self.operating_system = op
     def newYear(self, y: int):
         self.year = y
+#deletes data of teh computer but keeps data that there was a computer
+#I made this so that if I wanted to, I could have a computer ID by getting the index of the computer in the inventory, 
+#so deleting wouldn't change the number
     def soldComp(self):
         self.newPrice(0)
         self.newOS("sold")
@@ -63,7 +60,8 @@ class Computer:
         self.newYear(0)
 
 
-    #what is the difference between newOS and refurbich
+
+    #getting values
     def getDes(self):
         return self.description
     def getPros(self):
@@ -72,6 +70,7 @@ class Computer:
         return self.hard_drive_capacity
     def getMemory(self):
         return self.memory
+    #same as refurbish
     def getOP(self):
         return self.operating_system
     def getYear(self):

@@ -1,29 +1,24 @@
 class ResaleShop:
-
+    #creates resealeShop class which can be used to store computers. In the class, computers can eb added and deleted
     from array import array
     from computer import Computer
-    # What attributes will it need?
+    #attributes
     inventory: list=[]
 
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
+    #constructor
     def __init__(self):
         self.inventory
 
-    # What methods will you need?
-    ''' - storing the inventory for the store
-  - buying a computer (add to inventory)
-  - selling a computer (remove from inventory)
-   '''
-
+    #add to inventory
     def buy(self, c: Computer ):
-    #append
         self.inventory.append(c)
-
+    #clear computer data
     def sell(self, comp:Computer):
         comp.soldComp()
-
+    #print inventory
     def getInventory(self):
+        print(" ")
+        print("Inventory:")
         for x in self.inventory:
             if x.getPrice() != 0:
                 print(x.getPros())
@@ -48,19 +43,18 @@ def main():
     print("COMPUTER RESALE STORE")
     print("-" * 21)
 
+    myOtherComputer: Computer = Computer("2019 MacBook Pro", "Intel", 256, 16, "High Sierra", 2019, 1000)
+
+    myShop.getInventory()
+    myShop.buy(myOtherComputer)
+    print("Bought Mac Pro 2019")
     myShop.getInventory()
     myShop.sell(myComputer)
-    myShop.getInventory()
-    
-    #new os, new_OS = "MacOS Monterey"
-    '''"Mac Pro (Late 2013)",
-        "3.5 GHc 6-Core Intel Xeon E5",
-        1024, 64,
-        "macOS Big Sur", 2013, 1500'''
+    print("Sold 2013 Mac Pro")
+    myShop.getInventory() 
+    myOtherComputer.newOS("MacOS Monterey")
+    print("Updated OS")
+    myShop.getInventory() 
 
-#is it okay if I don't actualy delete stuff from the inventory?
-#error messages????
-#comments
-#naming conventions
 if __name__ == "__main__":
     main()
