@@ -40,9 +40,30 @@ class Computer:
         self.price = p
     def newOS(self, OS: str):
         self.operating_system=OS
+    def newDes(self, des: str):
+        self.description = des
+    def newPros(self, p: str):
+        self.processor_type = p
+    def newHD(self, hd: int):
+        self.hard_drive_capacity = hd
+    def newMemory(self, m: int):
+        self.memory = m
+    def newOP(self, op: str): 
+        self.operating_system = op
+    def newYear(self, y: int):
+        self.year = y
+    def soldComp(self):
+        self.newPrice(0)
+        self.newOS("sold")
+        self.newDes("sold")
+        self.newPros("sold")
+        self.newHD("0")
+        self.newMemory(0)
+        self.newOP("sold")
+        self.newYear(0)
+
+
     #what is the difference between newOS and refurbich
-    def actionRefurbish(self, OS: str):
-        self.operating_system = OS
     def getDes(self):
         return self.description
     def getPros(self):

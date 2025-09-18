@@ -5,10 +5,6 @@ class ResaleShop:
     # What attributes will it need?
     inventory: list=[]
 
-  
-
-
-
     # How will you set up your constructor?
     # Remember: in python, all constructors have the same name (__init__)
     def __init__(self):
@@ -25,20 +21,21 @@ class ResaleShop:
         self.inventory.append(c)
 
     def sell(self, comp:Computer):
-        self.n = self.inventory.index(comp)
-        self.inventory.remove(self, n)
-        self.inventory.insert(self, n, "Sold")
+        comp.soldComp()
 
     def getInventory(self):
         for x in self.inventory:
-            print(x.getPros())
-            print(x.getHD())
-            print(x.getMemory())
-            print(x.getOP())
-            print(x.getYear())
-            print(x.getPrice())
-            print("*"*21)
+            if x.getPrice() != 0:
+                print(x.getPros())
+                print(x.getDes())
+                print(x.getHD())
+                print(x.getMemory())
+                print(x.getOP())
+                print(x.getYear())
+                print(x.getPrice())
+                print("*"*21)
 
+#do I need the random print statements like in the main 
 
 def main():
     from computer import Computer
@@ -52,7 +49,18 @@ def main():
     print("-" * 21)
 
     myShop.getInventory()
+    myShop.sell(myComputer)
+    myShop.getInventory()
     
+    #new os, new_OS = "MacOS Monterey"
+    '''"Mac Pro (Late 2013)",
+        "3.5 GHc 6-Core Intel Xeon E5",
+        1024, 64,
+        "macOS Big Sur", 2013, 1500'''
 
+#is it okay if I don't actualy delete stuff from the inventory?
+#error messages????
+#comments
+#naming conventions
 if __name__ == "__main__":
     main()
