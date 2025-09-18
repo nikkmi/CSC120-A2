@@ -1,12 +1,18 @@
 class ResaleShop:
 
     from array import array
+    from computer import Computer
     # What attributes will it need?
-    inventory = array.array
-    condition
+    inventory: list=[]
+    name: str
+  
+
+
+
     # How will you set up your constructor?
     # Remember: in python, all constructors have the same name (__init__)
-    def __init__():
+    def __init__(self, n:str):
+        self.name = n
         self.inventory
 
     # What methods will you need?
@@ -18,7 +24,7 @@ class ResaleShop:
         self.inventory.append(comp)
 
 
-    def buy(self, d: str,
+    def buy(d: str,
                     pro: str,
                     h: int,
                     m: int,
@@ -26,20 +32,28 @@ class ResaleShop:
                     y: int,
                     pri: int ):
     #construct computer, append
-        newComputer: Computer = Computer(d: str,
-                    pro: str,
-                    h: int,
-                    m: int,
-                    o: str,
-                    y: int,
-                    pri: int)
+        newComputer: Computer = self.Computer( d, pro, h, m, o, y, pri)
         inventoryAppend(newComputer)
 
     def sell(self, comp:Computer):
-        int n = self.inventory.index(comp)
-        self.inventory.remove(n)
-        self.inventory.insert(n, "Sold")
+        self.n = self.inventory.index(comp)
+        self.inventory.remove(self, n)
+        self.inventory.insert(self, n, "Sold")
 
-    def getInventory():
+    def getInventory(self):
         print(inventory)
 
+def main():
+    myShop: ResaleShop = ResaleShop ("Smith Computer Shop")
+    myShop.buy("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 
+    1024, 64, "macOS Big Sur", 2013, 1500)
+
+    # Print a little banner
+    print("-" * 21)
+    print("COMPUTER RESALE STORE")
+    print("-" * 21)
+
+    myShop.getInventory()
+
+if __name__ == "__main__":
+    main()

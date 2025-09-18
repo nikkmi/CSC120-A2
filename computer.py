@@ -44,19 +44,5 @@ class Computer:
     def actionRefurbish(self, OS: str):
         self.operating_system = OS
 
-from resaleShop import resaleShop
 
-def main():
-    myShop: ResaleShop = ResaleShop()
-    myShop.buy("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 
-    1024, 64, "macOS Big Sur", 2013, 1500)
 
-    # Print a little banner
-    print("-" * 21)
-    print("COMPUTER RESALE STORE")
-    print("-" * 21)
-
-    myShop.getInventory()
-
-if __name__ == "__main__":
-    main()
