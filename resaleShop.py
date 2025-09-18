@@ -14,7 +14,7 @@ class ResaleShop:
   - buying a computer (add to inventory)
   - selling a computer (remove from inventory)
    '''
-   def inventoryAppend(self, comp: Computer):
+   def addToInvetrory(self, comp: Computer):
     self.inventory.append(comp)
 
 
