@@ -14,11 +14,11 @@ class ResaleShop:
   - buying a computer (add to inventory)
   - selling a computer (remove from inventory)
    '''
-   def add_invetrory(self, comp: Computer):
-     self.inventory.append(comp)
+    def add_invetrory(self, comp: Computer):
+        self.inventory.append(comp)
 
 
-   def buy(self, d: str,
+    def buy(self, d: str,
                     pro: str,
                     h: int,
                     m: int,
