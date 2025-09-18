@@ -4,15 +4,14 @@ class ResaleShop:
     from computer import Computer
     # What attributes will it need?
     inventory: list=[]
-    name: str
+
   
 
 
 
     # How will you set up your constructor?
     # Remember: in python, all constructors have the same name (__init__)
-    def __init__(self, n:str):
-        self.name = n
+    def __init__(self):
         self.inventory
 
     # What methods will you need?
@@ -20,20 +19,10 @@ class ResaleShop:
   - buying a computer (add to inventory)
   - selling a computer (remove from inventory)
    '''
-    def add_invetrory(self, comp: Computer):
-        self.inventory.append(comp)
 
-
-    def buy(d: str,
-                    pro: str,
-                    h: int,
-                    m: int,
-                    o: str,
-                    y: int,
-                    pri: int ):
-    #construct computer, append
-        newComputer: Computer = self.Computer( d, pro, h, m, o, y, pri)
-        inventoryAppend(newComputer)
+    def buy(self, c: Computer ):
+    #append
+        self.inventory.append(c)
 
     def sell(self, comp:Computer):
         self.n = self.inventory.index(comp)
@@ -41,12 +30,13 @@ class ResaleShop:
         self.inventory.insert(self, n, "Sold")
 
     def getInventory(self):
-        print(inventory)
+        print(self.inventory)
 
 def main():
-    myShop: ResaleShop = ResaleShop ("Smith Computer Shop")
-    myShop.buy("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 
-    1024, 64, "macOS Big Sur", 2013, 1500)
+    from computer import Computer
+    myShop: ResaleShop = ResaleShop ()
+    myComputer: Computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
+    myShop.buy(myComputer)
 
     # Print a little banner
     print("-" * 21)
