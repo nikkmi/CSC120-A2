@@ -1,7 +1,8 @@
 class ResaleShop:
 
+    from array import array
     # What attributes will it need?
-    inventory = []
+    inventory = array.array[]
     condition
     # How will you set up your constructor?
     # Remember: in python, all constructors have the same name (__init__)
