@@ -30,7 +30,15 @@ class ResaleShop:
         self.inventory.insert(self, n, "Sold")
 
     def getInventory(self):
-        print(self.inventory)
+        for x in self.inventory:
+            print(x.getPros())
+            print(x.getHD())
+            print(x.getMemory())
+            print(x.getOP())
+            print(x.getYear())
+            print(x.getPrice())
+            print("*"*21)
+
 
 def main():
     from computer import Computer
@@ -44,6 +52,7 @@ def main():
     print("-" * 21)
 
     myShop.getInventory()
+    
 
 if __name__ == "__main__":
     main()

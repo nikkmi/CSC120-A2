@@ -43,6 +43,20 @@ class Computer:
     #what is the difference between newOS and refurbich
     def actionRefurbish(self, OS: str):
         self.operating_system = OS
-
+    def getDes(self):
+        return self.description
+    def getPros(self):
+        return self.processor_type
+    def getHD(self):
+        return self.hard_drive_capacity
+    def getMemory(self):
+        return self.memory
+    def getOP(self):
+        return self.operating_system
+    def getYear(self):
+        return self.year_made
+    def getPrice(self):
+        return self.price
+        
 
 
